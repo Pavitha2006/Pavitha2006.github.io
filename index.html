@@ -1,76 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Pavitha Amirthalingam | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+    body{background:#0f172a;color:white}
+    a{text-decoration:none;color:inherit}
+    .container{max-width:1100px;margin:auto;padding:40px 20px}
+    header{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap}
+    .name{font-size:28px;font-weight:700}
+    nav a{margin-left:20px;font-weight:500}
+    nav a:hover{color:#38bdf8}
+
+    .hero{margin-top:60px;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+    .hero h1{font-size:42px;margin-bottom:15px}
+    .hero span{color:#38bdf8}
+    .hero p{line-height:1.7;color:#cbd5f5}
+    .btn{display:inline-block;margin-top:20px;padding:12px 22px;background:#38bdf8;color:black;border-radius:6px;font-weight:600}
+    .btn:hover{background:#0ea5e9}
+
+    .card{background:#020617;padding:25px;border-radius:12px;margin-top:25px}
+    h2{margin-bottom:15px;color:#38bdf8}
+
+    .skills span{display:inline-block;background:#1e293b;padding:8px 12px;border-radius:6px;margin:6px}
+
+    footer{text-align:center;margin-top:50px;color:#94a3b8}
+  </style>
 </head>
+
 <body>
 
-  <header>
-    <h1>Pavitha Amirthalingam</h1>
-    <p>B.E Computer Science & Engineering | 3rd Year</p>
-    <p>Panimalar Engineering College, Chennai</p>
-  </header>
+<div class="container">
 
-  <section class="about">
-    <h2>About Me</h2>
+<header>
+  <div class="name">Pavitha Amirthalingam</div>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero" id="about">
+  <div>
+    <h1>Hi, I'm <span>Pavitha</span></h1>
     <p>
-      I am a passionate Computer Science Engineering student with interest in software development,
-      app development and web technologies. I enjoy learning new skills and building real-world projects.
+      I'm a 3rd year B.E Computer Science Engineering student at Panimalar Engineering College, Chennai.
+      I am passionate about software development, web technologies and mobile app development.
     </p>
-  </section>
+    <a class="btn" href="#contact">Contact Me</a>
+  </div>
+  <div>
+    <div class="card">
+      <h2>Education</h2>
+      <p><b>College:</b> Panimalar Engineering College, Chennai</p>
+      <p><b>Degree:</b> B.E - Computer Science Engineering</p>
+      <p><b>Year:</b> 3rd Year</p>
+    </div>
+  </div>
+</section>
 
-  <section class="education">
-    <h2>Education</h2>
-    <ul>
-      <li><strong>Degree:</strong> B.E Computer Science & Engineering</li>
-      <li><strong>College:</strong> Panimalar Engineering College, Chennai</li>
-      <li><strong>Year:</strong> 3rd Year</li>
-    </ul>
-  </section>
+<section class="card" id="skills">
+  <h2>Technical Skills</h2>
+  <div class="skills">
+    <span>Java</span>
+    <span>Python</span>
+    <span>C</span>
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>SQL / MySQL</span>
+    <span>Flutter</span>
+    <span>Dart</span>
+  </div>
+</section>
 
-  <section class="skills">
-    <h2>Technical Skills</h2>
-    <ul>
-      <li>Java (Basics)</li>
-      <li>Python (Basics)</li>
-      <li>C Programming</li>
-      <li>HTML, CSS</li>
-      <li>SQL / MySQL</li>
-      <li>Flutter & Dart</li>
-    </ul>
-  </section>
+<section class="card" id="projects">
+  <h2>Projects</h2>
+  <p><b>CIVIGO</b> – A civic education game app that helps students learn civics concepts in an interactive and fun way.</p>
+</section>
 
-  <section class="projects">
-    <h2>Mini Project</h2>
-    <h3>Civigo – Civic Education Game App</h3>
-    <p>
-      Civigo is a scenario-based civic education game application designed to improve
-      civic awareness through interactive gameplay and quizzes.
-    </p>
-  </section>
+<section class="card">
+  <h2>Certifications</h2>
+  <ul>
+    <li>Hackathon Participation Certificate</li>
+    <li>NASSCOM Certification</li>
+    <li>NPTEL Certifications</li>
+  </ul>
+</section>
 
-  <section class="certifications">
-    <h2>Certifications</h2>
-    <ul>
-      <li>Hackathon Participation Certificate</li>
-      <li>NASSCOM Certificates</li>
-      <li>NPTEL Certificates</li>
-    </ul>
-  </section>
+<section class="card" id="contact">
+  <h2>Contact</h2>
+  <p><b>Email:</b> pavitha010106@gmail.com</p>
+  <p><b>GitHub:</b> <a href="https://github.com/Pavitha2006" target="_blank">github.com/Pavitha2006</a></p>
+  <p><b>LinkedIn:</b> <a href="https://www.linkedin.com/in/pavitha-amirthalingam/" target="_blank">linkedin.com/in/pavitha-amirthalingam</a></p>
+</section>
 
-  <section class="contact">
-    <h2>Contact</h2>
-    <p><strong>Email:</strong> pavitha010106@gmail.com</p>
-    <p><strong>GitHub:</strong> <a href="https://github.com/Pavitha2006" target="_blank">github.com/Pavitha2006</a></p>
-    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/pavitha-amirthalingam/" target="_blank">linkedin.com/in/pavitha-amirthalingam</a></p>
-  </section>
+<footer>
+  © 2026 Pavitha Amirthalingam | Portfolio
+</footer>
 
-  <footer>
-    <p>© 2026 Pavitha Amirthalingam | Portfolio</p>
-  </footer>
+</div>
 
 </body>
 </html>
